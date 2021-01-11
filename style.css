@@ -1,0 +1,64 @@
+/*************All*************/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+/*************Header*************/
+.headerMainDesign {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.ulMainDesign {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ulMainDesign li {
+  color: white;
+}
+
+/*************FirstSection*************/
+.firstSectionDesgin {
+  background-image: url("showcase.jpg");
+  background-size: cover;
+  height: calc(100vh - 38px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstSectionDesgin h1, .firstSectionDesgin h2, .firstSectionDesgin p {
+  color: white;
+}
+
+.firstSectionDesgin p {
+  text-align: center;
+}
+
+/*************SecondSection*************/
+.secondSectionDesign {
+  background-color: #252529;
+}
+
+.secondSectionDesign h2, .secondSectionDesign h3, .secondSectionDesign p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
