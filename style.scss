@@ -1,6 +1,9 @@
 $bg-primaryColor: #333;
 $bg-secondaryColor: #252529;
 
+$txt-primaryColor: #333;
+$txt-secondaryColor: white;
+
 
 $fontweightVar: (
     "regular" : 300,
@@ -135,13 +138,34 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    h3{
+        font-size: 32px;
+        font-family: $mainFontFamily;
+        color: #333;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 20px;
+        line-height: 33px;
+        color: #333;
+        margin: 20px 0;
+        text-align: center;
+    }
+    a {
+        color: $txt-secondaryColor;
+        background-color: #103063;
+        padding: 20px 20px;
+        &:hover {
+            background-color: #143f85;
+        }
+    }
 }
 
 
 
-
-
-
+/*************FourhtSection*************/
 
 
 .fourthSection {
@@ -150,8 +174,90 @@ a {
     justify-content: center;
     align-items: center;
     background-image: url("section-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: cover;
     height: 500px;
     h3 , p {
         color: white;
     }
+    h3 {
+        font-size: 32px;
+        margin: 32px 0px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
+
+
+/*************FifthSection*************/
+
+.fifthSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    .fifthSectionPiture {
+        width: 30%;
+        img {
+            width: 100%;
+        }
+    }
+    .fifthSectionData {
+        width: 40%;
+        h2 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 25px;
+            margin: 15px 0;
+        }
+        hr {
+            margin: 10px 0;
+            width: 80%;
+        }
+        a {
+            color: #103063;
+            .fa-chevron-right {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+
+/*************FooterSection*************/
+
+.footerMainDesign {
+    .footerWidgetsSection {
+        display: flex;
+        background-color: #252529;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 25px 0;
+        ul {
+            list-style: none;
+            color: white;
+            li:first-child {
+                padding-bottom: 5px;
+                border-bottom: 1px solid #444;
+                font-size: 20px;
+            }
+            li {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+    .copyrightSection {
+        background-color: $bg-primaryColor;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
